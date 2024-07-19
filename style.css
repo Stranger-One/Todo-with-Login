@@ -1,9 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body, html{
+
+body,
+html {
     width: 100%;
     height: 100%;
     background: #aaaaaa;
@@ -11,7 +13,8 @@ body, html{
     align-items: center;
     justify-content: center;
 }
-:root{
+
+:root {
     --btn-color: ;
 }
 
@@ -23,7 +26,7 @@ body, html{
     width: 90%;
 }
 
-.auth-container{
+.auth-container {
     width: 100%;
     height: 80vh;
     padding: 60px;
@@ -34,20 +37,23 @@ body, html{
     background-size: cover;
     /* display: none; */
 }
-.auth-container .image-container{
+
+.auth-container .image-container {
     height: 100%;
     display: flex;
     align-items: center;
 }
-.auth-container .form-container{
+
+.auth-container .form-container {
     width: 100%;
     height: 100%;
 }
 
-#register-form{
+#register-form {
     display: none;
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,40 +62,44 @@ body, html{
     height: 100%;
 }
 
-form .profile{
+form .profile {
     width: 140px;
     height: 140px;
     border-radius: 50%;
     overflow: hidden;
     margin: 20px 0;
 }
-form .profile img{
+
+form .profile img {
     width: 100%;
     object-fit: cover;
 }
-form input{
+
+form input {
     width: 70%;
 }
 
-form .toggle{
+form .toggle {
     margin-top: 20px;
     font-size: 15px;
     font-weight: 400;
 }
-form .toggle span{
+
+form .toggle span {
     margin-top: 20px;
     font-size: 15px;
     font-weight: 400;
     color: #01A7EB;
-    cursor: pointer;  
+    cursor: pointer;
 }
-form .toggle span:hover{
+
+form .toggle span:hover {
     text-decoration: underline;
 }
 
 
 
-#app{
+#app {
     height: 80vh;
     background-color: #F9C1E6;
     /* display: flex; */
@@ -100,7 +110,8 @@ form .toggle span:hover{
     justify-content: flex-start;
     position: relative;
 }
-#app #task-form{
+
+#app #task-form {
     width: 80%;
     /* background-color: black; */
     margin: 20px auto;
@@ -108,11 +119,12 @@ form .toggle span:hover{
     justify-content: center;
     gap: 20px;
 }
-#app #task-form input{
+
+#app #task-form input {
     font-size: 18px;
 }
 
-#app #task-list{
+#app #task-list {
     width: 100%;
     /* background: #635e5e; */
     display: flex;
@@ -123,7 +135,8 @@ form .toggle span:hover{
     overflow: auto;
 
 }
-#app #task-list .task{
+
+#app #task-list .task {
     width: 100%;
     display: flex;
     padding: 10px;
@@ -131,7 +144,7 @@ form .toggle span:hover{
     border-radius: 8px;
 }
 
-#app #task-list .task .task-text{
+#app #task-list .task .task-text {
     width: calc(100% - 150px);
     max-height: 45px;
     outline: none;
@@ -148,15 +161,17 @@ form .toggle span:hover{
     overflow: hidden;
     border-radius: 5px;
 }
-.completed{
+
+.completed {
     text-decoration: line-through;
 }
 
 
-#app #task-list::-webkit-scrollbar{
+#app #task-list::-webkit-scrollbar {
     display: none;
 }
-#app #task-list .task .btns{
+
+#app #task-list .task .btns {
     width: fit-content;
     flex-wrap: nowrap;
     display: flex;
@@ -164,14 +179,15 @@ form .toggle span:hover{
     /* background-color: red; */
     align-items: center;
 }
-#app #task-list .task .btns button{
+
+#app #task-list .task .btns button {
     padding: 7px 10px;
     height: 40px;
     width: 40px;
 }
 
 
-.user-profile{
+.user-profile {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -181,10 +197,11 @@ form .toggle span:hover{
     gap: 10px;
 }
 
-.user-profile .username{
+.user-profile .username {
     font-size: 18px;
 }
-.user-profile .logout{
+
+.user-profile .logout {
     font-size: 18px;
     /* background-color: #fff; */
     padding: 8px;
@@ -192,7 +209,8 @@ form .toggle span:hover{
     border-radius: 50%;
     cursor: pointer;
 }
-.user-profile .logout:hover{
+
+.user-profile .logout:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -213,11 +231,12 @@ form .toggle span:hover{
 
 
 
-.hidden{
+.hidden {
     display: none;
 }
 
-input, button {
+input,
+button {
     margin: 5px 0;
     padding: 10px;
     /* border: 1px solid #ddd; */

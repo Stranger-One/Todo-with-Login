@@ -25,17 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         loginForm.style.display = "flex"
     })
 
-    // const resisterIt = () => {
-    //     console.log('resister')
-    //     app.style.display = "block"
-    //     auth.style.display = "none"
-    // }
-    // const loginIt = () => {
-    //     console.log('login')
-    //     app.style.display = "block"
-    //     auth.style.display = "none"
-    // }
-
 
     let users = JSON.parse(localStorage.getItem('users')) || [];
     let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
@@ -181,11 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // console.log(tasks)
     });
 
-    // document.querySelectorAll(".btns").forEach( btn =>{
-    //     btn.addEventListener('click', (e) => {
-    //         console.log(e.target.classList.include('toggle-complete'))
-    //     })
-    // })
     window.toggleComplete = (id) => {
         tasks.map((task) => {
             if (task.id == id) {
@@ -207,25 +191,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if (task.id == id) {
                 taskInput.value = task.text
                 tasks = tasks.filter((task) => task.id != id)
-                
+
                 taskId = id
                 saveToLocalStorage()
                 renderTasks()
             }
         })
     }
-    // let count = 0;
-    // document.querySelectorAll(".editTask").forEach(edit => {
-    //     edit.addEventListener('click', (e) => {
-    //         let textArea = e.target.closest(".task").querySelector("textarea");
-    //         if(count = 0){
-    //             textArea.removeAttribute('readonly')
-    //             textArea.style.border = '1px solid black'
-    //             textArea.focus()
-    //             textArea.selectionStart = textArea.selectionEnd = textArea.value.length;
-    //         }
-    //     })
-    // })
+
 
 
 
